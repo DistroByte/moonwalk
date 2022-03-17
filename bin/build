@@ -1,3 +1,20 @@
 #!/bin/sh
 
-bundle exec jekyll build
+# Create a script that checks if a git repository has any updates, pulls the changes if it does, or exits 0. 
+
+# Check if there are any updates
+git fetch --dry-run
+if [ $? -eq 0 ]; then
+    echo "No updates"
+    exit 0
+fi
+
+# Pull the updates
+git pull -r
+
+# Check if there are any errors
+if [ $? -eq 0 ]; then
+    echo "Pull successful"
+else
+    echo "Pull failed"
+fi
