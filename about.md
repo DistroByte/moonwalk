@@ -3,6 +3,6 @@ layout: post
 title: About
 ---
 
-This is an example page!
+Hi there!
 
-Actually, it has the same layout of a post...
+My name is James Hackett, and I'm a Systems Administrator for Redbrick and a 2nd year CASE student in DCU!
